@@ -1,154 +1,155 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 img {
-    object-fit:cover;
-    width: 100%;
-    height: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 figure {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /*--------------------HEADER LAYOUT------------------------------*/
 .app-header {
-    background-color: rgb(205, 131, 47);
-    position: fixed;
-    height: 8vh;
-    padding-inline: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    opacity: 0;
-    inset: 0;
-    animation: show 5s ease-out forwards;
+  background-color: rgb(205, 131, 47);
+  position: fixed;
+  height: 8vh;
+  padding-inline: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  inset: 0;
+  animation: show 5s ease-out forwards;
 
-    a {
-        margin-inline: 10px;
-    }
+  a {
+    margin-inline: 10px;
+  }
 }
 /*------------------END OF HEADER LAYOUT------------------------------*/
 /*--------------------------------------------------*/
 
 main {
-    min-height: 100vh;
-    padding-top: 8vh;
-    display: flex;
+  min-height: 100vh;
+  padding-top: 8vh;
+  display: flex;
 }
-
 
 #login-main {
-    justify-content: center;
+  justify-content: center;
 }
 
-header { background-color: orange;opacity: 0.9;box-shadow: 0 0 5px #000;}
-h1{display: flex;justify-content: center;padding-bottom: 20px;padding-top: 20px;}
+header {
+  background-color: orange;
+  opacity: 0.9;
+  box-shadow: 0 0 5px #000;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
 
 form {
-    box-shadow: 0 0 5px rgb(0, 0, 0);
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: orange;
+  width: 50%; /* Ajustez cette valeur en fonction de vos besoins */
+  height: 50%;
+  margin-top: 25px;
+  margin: 0 auto; /* Centre le formulaire horizontalement */
+  justify-content: center;
+
+  section {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: orange;
-    width: 50%; /* Ajustez cette valeur en fonction de vos besoins */
-    height: 50%;
-    margin-top: 25px;
-    margin: 0 auto; /* Centre le formulaire horizontalement */
-    justify-content: center;
+  }
 
-    section {
-        display: flex;
-        flex-direction: column;
-        
+  article {
+    margin-block: 10px;
+    display: flex;
+    flex-direction: column;
+
+    input {
+      padding: 10px;
     }
+    border: solid #000 2px;
+  }
 
-    article {
-        margin-block: 10px;
-        display: flex;
-        flex-direction: column;
-        
-        input {
-            padding: 10px;
-            
+  width: 400px;
+  align-self: center;
 
-        }
-        border: solid #000 2px;
-    }
-
-    width: 400px;
-    align-self: center;
-
-    section + section {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  section + section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 form button {
-    width: 100%;
-    padding: 10px;
-    background-color: white;
-    color: black;
-    border: 2px solid black;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
 }
 body {
-    background-image: url('../../assets/360_F_275924184_GP4ACV80EK8NokxlFaUB2qykpXKrroqx.jpg ');
-    background-size: cover; /* Assure que l'image couvre tout l'écran */
-    background-position:top; /* Centre l'image */
-    background-repeat: no-repeat; /* Évite la répétition de l'image */
+  background-image: url("../../assets/360_F_275924184_GP4ACV80EK8NokxlFaUB2qykpXKrroqx.jpg ");
+  background-size: cover; /* Assure que l'image couvre tout l'écran */
+  background-position: top; /* Centre l'image */
+  background-repeat: no-repeat; /* Évite la répétition de l'image */
 }
-
-/* Passer les champs en rouge si le texte entré est invalide */
-#email:invalid{
-    background-color: red
+p {
+  color: black;
+  background-color: orange;
+  width: 50%; /* Vous pouvez ajuster la largeur selon vos besoins */
+  margin: 0 auto; /* Centre horizontalement l'élément */
+  text-align: center; /* Centre le texte à l'intérieur du paragraphe */
 }
-#mdp:invalid{
-    background-color: red
-}
-
-
-
 
 /*-----------ANIMATION KEYFRAMES ----------*/
 
 @keyframes show {
-    
-    from {
-        opacity: 0;
-        transform: translateY(-100px);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
