@@ -1,12 +1,20 @@
 const liste = function (data) {
-
-console.log(Menu);
-const Menu = ["pizza", "pates", "lasagnes", "viandes"];
+    const Menu = ["pizza", "pates", "lasagnes", "viandes"];
     Menu.push(data);
-    const AjPlat =+ `<li>${data}</li>`
-    NvPlat.innerHTML = AjPlat
-
-    console.log(AjPlat);
+    console.log(Menu);
+    const AjPlat = `<li>${(data)}</li>`
+  return `
+        <ul>
+        ${AjPlat}
+        <li>${Menu[0]}</li>
+        <li>${Menu[1]}</li>
+        <li>${Menu[2]}</li>
+        <li>${Menu[3]}</li>
+        <div class = "nvPlat"> </div>
+        </ul>
+        
+    `
+    ; 
 };
 
 export default liste;
